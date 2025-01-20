@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.merri {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: medium;
+     
+       
+      
+
+}
+ 
+
+
+.jersey-15-regular {
+    font-family: "Jersey 15", serif;
+    font-style: normal;
+}

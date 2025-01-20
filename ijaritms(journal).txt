@@ -1,0 +1,15 @@
+IJDIII (Journal Project )
+
+Login
+username :  admin
+password  :  nimAd@2024#IjArItM$
+email         :  balavdy@gmail.com
+
+
+Database(Mysql)
+host id       :  89.116.53.23
+username  :  u937770786_sub_IJDIII
+databasename  :  u937770786_sub_IJDIII
+password  :  e=WQxD#Y1
+
+
