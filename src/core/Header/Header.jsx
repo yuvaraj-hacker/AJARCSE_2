@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <>
-      <section className=" bg-[#333333]  md:py-3 py-2 fixed top-0 w-full z-50 px-5">
+      {/* <section className=" bg-[#333333]  md:py-3 py-2 fixed top-0 w-full z-50 px-5">
         <div className='max-w-[95rem] mx-auto'>
           <div className='flex justify-between'>
             <div className='flex gap-5 justify-center items-center'>
@@ -62,8 +62,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </section>
-      <header className="bg-[#F2F2F2] z-50 p-4   md:top-12 top-10">
+      </section> */}
+      <header className="bg-[#F2F2F2] z-50 p-4    ">
         <div className="container mx-auto flex justify-between text-black items-center">
           <Link to='/'>
             <div className="flex items-center text-[#1B356F]">
@@ -106,14 +106,13 @@ const Header = () => {
                 className="  inline-flex py-2  px-4 gap-2 focus:outline-none lg:hover:text-[#1B356F] hover:text-[#1B356F]"
               >
                 Journal Overview
-                <MdExpandMore
-                  className={`${isDropdownOpen ? 'rotate-180' : 'rotate-0'} text-2xl duration-300`}
+                <MdExpandMore className={`${isDropdownOpen ? 'rotate-180' : 'rotate-0'} text-2xl duration-300`}
                 />
 
               </button>
 
               {isDropdownOpen && (
-                <div className="absolute lg:left-0 md:left-96 left-28 flex flex-col  lg:text-[#1B356F]  bg-blue-50   lg:bg-white  text-[#1B356F]  mt-2 rounded shadow-lg w-56">
+                <div className="absolute lg:left-0 md:left-96 left-28  flex flex-col lg:grid grid-cols-2 lg:flex-none lg:text-[#1B356F]  bg-blue-50   lg:bg-white  text-[#1B356F]  mt-2 rounded shadow-lg  lg:w-96 ">
 
 
                   <Link

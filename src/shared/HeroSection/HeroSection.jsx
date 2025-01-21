@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 
-const HeroSection = ({ isActive, activeText, defaultText }) => {
+const HeroSections = ({ isActive, activeText, defaultText }) => {
     const imageRef = useRef(null);
     const containerRef = useRef(null);
     useEffect(() => {
@@ -45,4 +45,4 @@ const HeroSection = ({ isActive, activeText, defaultText }) => {
     );
 };
 
-export default HeroSection;
+export default HeroSections;

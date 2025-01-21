@@ -20,8 +20,6 @@ import PublicationEthic from "../shared/journal-overview/PublicationEthic";
 // import PublishSpecial from "../shared/special-issues/PublishSpecial";
 import ScrollToTop from "./ScrollToTop";
 
-
-
 export default function Approuter() {
   return (
     <BrowserRouter>
@@ -57,7 +55,7 @@ export default function Approuter() {
           <Route path="/aboutspecial" element={<AboutSpecial />} />
           <Route path="/proposespecial" element={<ProposeSpecial />} />
           <Route path="/publishspecial" element={<PublishSpecial />} /> */}
-           
+
         </Route>
       </Routes>
 

@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import Dash from '../Side/Dash';
-import HeroSection from '../HeroSection/HeroSection';
+import HeroSection from '../Home/HeroSection';
 function Aboutus() {
   const [isActive, setIsActive] = useState(true);
 
   return (
     <>
-      <section className="  mx-auto">
+
+      <HeroSection
+        backgroundImage="/images/Herosection/ground.jpg"
+        text=" The Editorial Board of AJARCSE comprises leading scholars and experts dedicated to advancing research
+          in computer science and engineering. We ensure rigorous peer review, uphold academic integrity, and foster
+          innovation across emerging technologies.  "  />
+      <section className="  mx-auto   ">
         <section className=" ">
           <section className=" ">
             <section className="">
@@ -16,14 +22,14 @@ function Aboutus() {
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 md:py-14">
                   <div className="text-center mb-12">
-                    <h1 className="md:text-4xl text-xl font-bold text-[#1B356F] mb-4">Editorial Board</h1>
+                    <div className='flex justify-center gap-3 items-center'>
+                      <div className='w-1 h-8 bg-[#1B356F]  '>
 
+                      </div>
+                      <h2 className="text-3xl font-bold text-gray-800  ">Editorial Board</h2>
+                    </div>
                     <div className="relative">
-                      <img
-                        className="w-96   rounded-3xl mx-auto  shadow-xl"
-                        src="/images/Herosection/editorial.jpeg"
-                        alt="AJARCSE Research"
-                      />
+
                       <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
                       <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
                     </div>

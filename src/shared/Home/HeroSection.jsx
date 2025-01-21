@@ -1,0 +1,14 @@
+const HeroSection = ({ backgroundImage, text, textSize = "md:text-lg text-sm", padding = "md:py-20 py-10" }) => {
+    return (
+      <section 
+        className={`bg-[url('${backgroundImage}')] bg-cover bg-center overflow-visible ${padding}`}
+      >
+        <p className={`max-w-3xl mx-auto ${textSize} text-white text-center`}>
+          {text}
+        </p>
+      </section>
+    );
+  };
+  
+  export default HeroSection;
+  

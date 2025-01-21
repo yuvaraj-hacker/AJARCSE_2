@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroSection from '../Home/HeroSection';
 
 const AboutUs = () => {
   const sections = [
@@ -37,64 +38,70 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden bg-white">
-        <div className="absolute inset-0">
-          <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
-        </div>
+    <>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 md:py-14">
-          <div className="text-center mb-12">
-            <h1 className="md:text-4xl text-xl font-bold text-[#1B356F] mb-4">About Us</h1>
-            <div className="relative">
-              <img
-                className="w-96   rounded-3xl mx-auto  shadow-xl"
-                src="/images/Herosection/advanceearch.jpg"
-                alt="AJARCSE Research"
-              />
-              <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
-              <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
-            </div>
-            <p className="max-w-3xl mx-auto md:text-lg text-sm text-gray-600 mt-4">
-              American Journal of Advanced Research in Computer Science & Engineering (AJARCSE) is a scholarly peer-reviewed journal dedicated to advancing the understanding and application of information technology and management science in today's digital age.
-            </p>
+      <HeroSection
+        backgroundImage="/images/Herosection/ground.jpg"
+        text="          American Journal of Advanced Research in Computer Science & Engineering (AJARCSE) is a scholarly peer-reviewed journal dedicated to advancing the understanding and application of information technology and management science in today's digital age.
+ "  />
+
+      <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+
+        <div className="relative overflow-hidden bg-white">
+          <div className="absolute inset-0">
+            <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
           </div>
 
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 md:py-16">
-            <div className="grid md:grid-cols-2 md:gap-8 gap-4">
-              {sections.map((section, index) => (
-                <div key={index} className="bg-white md:p-8 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300" >
-                  <h2 className="md:text-2xl text-xl font-bold text-[#1B356F] mb-4 flex items-center">
-                    <span className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
-                      <span className="text-[#1B356F] text-sm font-bold">{index + 1}</span>
-                    </span>
-                    {section.title}
-                  </h2>
-                  {section.isList ? (
-                    <ul className="md:space-y-2 space-y-1 text-black">
-                      {section.content.map((item, idx) => (
-                        <li key={idx} className="flex md:text-base text-sm items-center">
-                          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mr-2"></span>
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-black leading-relaxed md:text-base text-sm">
-                      {section.content}
-                    </p>
-                  )}
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 md:py-14">
+            <div className="text-center mb-12 ">
+              <div className='flex justify-center gap-3 items-center'>
+                <div className='w-1 h-8 bg-[#1B356F]  '>
+
                 </div>
-              ))}
+                <h2 className="text-3xl font-bold text-gray-800  ">About Us</h2>
+              </div>
+              {/* <div className="relative">
+                <img className="w-96   rounded-3xl mx-auto  shadow-xl" src="/images/Herosection/advanceearch.jpg" alt="AJARCSE Research" />
+                <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
+                <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
+               </div> */}
+
+            </div>
+
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 md:py-16">
+              <div className="grid md:grid-cols-2 md:gap-8 gap-4">
+                {sections.map((section, index) => (
+                  <div key={index} className="bg-white md:p-8 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300" >
+                    <h2 className="md:text-2xl text-xl font-bold text-[#1B356F] mb-4 flex items-center">
+                      <span className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
+                        <span className="text-[#1B356F] text-sm font-bold">{index + 1}</span>
+                      </span> {section.title}
+                    </h2>
+                    {section.isList ? (
+                      <ul className="md:space-y-2 space-y-1 text-black">
+                        {section.content.map((item, idx) => (
+                          <li key={idx} className="flex md:text-base text-sm items-center">
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#1B356F] mr-2"></span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-black leading-relaxed md:text-base text-sm">
+                        {section.content}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
+
+        {/* Content Sections */}
+
       </div>
-
-      {/* Content Sections */}
-
-    </div>
+    </>
   );
 };
 

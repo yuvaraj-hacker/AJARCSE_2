@@ -2,12 +2,16 @@
 
 
 import React, { useEffect, useRef, useState } from 'react'
-import Dash from '../Side/Dash';
-import HeroSection from '../HeroSection/HeroSection';
+import HeroSection from '../Home/HeroSection'
+
 function Aboutus() {
     const [isActive, setIsActive] = useState(true)
     return (
         <>
+            <HeroSection
+                backgroundImage="/images/Herosection/ground.jpg"
+                text="This Copyright Transfer Agreement ensures that the author(s) grant the journal exclusive rights to publish and distribute their article. By signing this form, authors confirm the originality of the work, agree to transfer copyright, and give the journal the authority to manage all rights related to the article.
+  "  />
             <section className="  mx-auto">
                 <div className="relative overflow-hidden bg-white">
                     <div className="absolute inset-0">
@@ -15,10 +19,15 @@ function Aboutus() {
                     </div>
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-14 py-7">
                         <div className="text-center md:mb-12">
-                            <h1 className="md:text-4xl text-xl font-bold text-[#1B356F] mb-4">Copyrights Form</h1>
+                            <div className='flex justify-center gap-3 items-center'>
+                                <div className='w-1 h-8 bg-[#1B356F]  '>
+
+                                </div>
+                                <h2 className="text-3xl font-bold text-gray-800  ">Copyright Form</h2>
+                            </div>
                         </div>
                         <div className="relative">
-                            <img className="w-96   rounded-3xl mx-auto  shadow-xl" src="/images/Herosection/copy.jpg" alt="AJARCSE Research" />
+
                             <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
                             <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
                         </div>
