@@ -160,7 +160,7 @@ const Home = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
             {benefits.map((benefit, index) => (
               <div key={index} className="md:p-4 p-2 bg-gray-100   rounded-bl-3xl transform hover:scale-105 transition-transform duration-300" >
-                <div className="flex justify-center md:mb-4">{benefit.icon}</div>
+                <div className="flex justify-center   md:mb-4">{benefit.icon}</div>
                 <h3 className="md:text-xl text-lg font-semibold text-gray-800 md:mb-3 mb-2">{benefit.title}</h3>
                 <p className="text-gray-600 md:text-base text-sm">{benefit.description}</p>
               </div>
@@ -182,7 +182,7 @@ const Home = () => {
                 {topics.map((topic, index) => (
                   <div key={index} className="md:space-y-4 space-y-2">
                     <div className="flex items-center md:gap-2 bg-white lg:p-5 border border-[#1B356F] xl:h-12 md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
-                      <div className=" p-2 text-[#1B356F] rounded-lg text-xl     "><FaCircle  size={7}/></div>
+                      <div className=" p-2 text-[#1B356F] rounded-lg text-xl "><FaCircle size={7} /></div>
                       <p className="text-black md:text-sm text-sm  font-semibold">{topic.name}</p>
                     </div>
                   </div>
@@ -219,7 +219,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-            <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md hover:bg-[#1B356F] transition duration-300"  >
+          <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md hover:bg-[#1B356F] transition duration-300"  >
             🔗 Submit Your Paper Now
           </a>
         </div>
