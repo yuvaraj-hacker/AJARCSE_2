@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel, FaLocationArrow } from "react-icons/fa";
+import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel, FaLocationArrow, FaArrowRight } from "react-icons/fa";
 import { FaCheckCircle, FaClock, FaCogs, FaTrophy, FaChartLine } from "react-icons/fa";
 import { FaFileAlt, FaCalendarAlt, FaSyncAlt, } from "react-icons/fa";
 import { SiEthereum } from 'react-icons/si';
@@ -212,7 +212,7 @@ const Home = () => {
                 <p className="text-gray-600 md:text-base text-sm">Follow our manuscript preparation guidelines before submission.</p>
                 <Link to='/author-guidelines'>
                   <div className='animate-pulse flex justify-end cursor-pointer '>
-                    <FaLocationArrow color="black" className='md:text-2xl text-xl' />
+                    <FaArrowRight color="black" className='md:text-2xl text-xl' />
                   </div>
                 </Link>
               </div>

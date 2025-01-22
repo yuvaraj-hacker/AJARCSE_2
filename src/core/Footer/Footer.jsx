@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope, FaGlobe, FaLink } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -7,11 +8,19 @@ const Footer = () => {
       <div className=" mx-auto px-5 max-w-[97rem]  " >
         <div className="grid grid-cols-1   md:grid-cols-3 md:gap-8 gap-4">
           {/* Contact Information */}
-          <div  className='text-center md:text-left'>
+          <div className='text-center md:text-left'>
             <h4 className="text-xl font-bold mb-2">AJARCSE</h4>
-            <div className=''>
-              <p>Email: <a href="mailto:editor@AJARCSE.com" className=" ">editor@ajarcse.com</a></p>
-              <p>Website: <a href="https://www.AJARCSE.com" className=" ">www.ajarcse.com</a></p>
+
+            <div className='flex flex-col justify-center md:items-start items-center md:text-left'>
+              <div className='flex gap-3 items-center'>
+                <FaEnvelope />
+                <p>Email: <a href="mailto:editor@AJARCSE.com" className=" ">editor@ajarcse.com</a></p>
+              </div>
+              <div className='flex gap-3 items-center'>
+              <FaGlobe />
+                <p>Website: <a href="https://www.AJARCSE.com" className=" ">www.ajarcse.com</a></p>
+              </div>
+
             </div>
           </div>
 
@@ -24,7 +33,6 @@ const Footer = () => {
               <li><a href="/contactus" className="hover:underline">Contact Us</a></li>
             </ul>
           </div>
-
 
           <div className='lg:ml-auto md:text-right text-center '>
             <h4 className="text-xl font-bold mb-2">Journal Overview</h4>
@@ -44,7 +52,7 @@ const Footer = () => {
           <div>
           </div>
           <div className="text-center lg:mb-0 mb-5">
-            <p>© 2025 <span className='hover:underline' > <Link  to="/" target='_blank'>AJARCSE</Link> </span> . All Rights Reserved.</p>
+            <p>© 2025 <span className='hover:underline' > <Link to="/" target='_blank'>AJARCSE</Link> </span> . All Rights Reserved.</p>
           </div>
           <div>
             <img className='ml-auto w-24' src="/images/Herosection/white.png" alt="ojs" />
