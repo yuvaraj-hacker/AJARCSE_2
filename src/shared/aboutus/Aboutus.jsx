@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroSection from '../Home/HeroSection';
+import Design from '../journal-overview/Design';
 
 const AboutUs = () => {
   const sections = [
@@ -15,12 +16,12 @@ const AboutUs = () => {
       title: "Research Areas",
       isList: true,
       content: [
-        "Information systems and technology",
-        "Data analytics and business intelligence",
-        "E-commerce and digital marketing",
-        "IT governance and cybersecurity",
-        "Decision sciences and operations research",
-        "Knowledge management and organizational behavior"
+        "AI & Machine Learning Innovations",
+        "Blockchain & Fintech Evolution",
+        "Quantum Computing Trends",
+        "Edge Computing & IoT",
+        "Automation & Robotics",
+        "Digital Transformation Strategies"
       ]
     },
     {
@@ -53,25 +54,14 @@ const AboutUs = () => {
           </div>
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 md:py-14">
-            <div className="text-center mb-12 ">
-              <div className='flex justify-center gap-3 items-center'>
-                <div className='w-1 h-8 bg-[#1B356F]  '>
-
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800  ">About Us</h2>
-              </div>
-              {/* <div className="relative">
-                <img className="w-96   rounded-3xl mx-auto  shadow-xl" src="/images/Herosection/advanceearch.jpg" alt="AJARCSE Research" />
-                <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
-                <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
-               </div> */}
-
+            <div className="text-center md:mb-12 ">
+              <Design topic="About Us" />
             </div>
 
-            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 md:py-16">
+            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 md:gap-8 gap-4">
                 {sections.map((section, index) => (
-                  <div key={index} className="bg-white md:p-8 p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300" >
+                  <div key={index} className={` ${index % 2 ? ' bg-white ' : ' md:bg-gradient-to-l from-blue-50/50 to-blue-100/50    bg-white  '} md:p-8 p-4 rounded-bl-3xl  shadow-md transition-shadow duration-300`}  >
                     <h2 className="md:text-2xl text-xl font-bold text-[#1B356F] mb-4 flex items-center">
                       <span className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center mr-3">
                         <span className="text-[#1B356F] text-sm font-bold">{index + 1}</span>
@@ -79,7 +69,7 @@ const AboutUs = () => {
                     </h2>
                     {section.isList ? (
                       <ul className="md:space-y-2 space-y-1 text-black">
-                        {section.content.map((item, idx) => (
+                        {section.content.map((item, idx) => ( 
                           <li key={idx} className="flex md:text-base text-sm items-center">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#1B356F] mr-2"></span>
                             {item}

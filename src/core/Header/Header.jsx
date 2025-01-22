@@ -193,7 +193,7 @@ const Header = () => {
             Submit New Manuscript
           </Link> */}
           </nav>
-          <div className="bg-[#1B356F] md:p-3 p-2 w-fit rounded-3xl lg:block hidden text-white border-white border-2 md:text-sm text-xs cursor-pointer animate-glow">
+          <div className="bg-[#1B356F] md:p-3 p-2 w-fit rounded-bl-3xl lg:block hidden text-white border-white border-2 md:text-sm text-xs cursor-pointer animate-glow">
             Submission Portal
           </div>
         </div>

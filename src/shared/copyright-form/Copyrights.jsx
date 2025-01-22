@@ -3,6 +3,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import HeroSection from '../Home/HeroSection'
+import Design from '../journal-overview/Design'
 
 function Aboutus() {
     const [isActive, setIsActive] = useState(true)
@@ -15,17 +16,11 @@ function Aboutus() {
             <section className="  mx-auto">
                 <div className="relative overflow-hidden bg-white">
                     <div className="absolute inset-0">
-                        <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
+                        <div className="absolute inset-y-0 right-0 w-1/2  "></div>
                     </div>
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-14 py-7">
-                        <div className="text-center md:mb-12">
-                            <div className='flex justify-center gap-3 items-center'>
-                                <div className='w-1 h-8 bg-[#1B356F]  '>
-
-                                </div>
-                                <h2 className="text-3xl font-bold text-gray-800  ">Copyright Form</h2>
-                            </div>
-                        </div>
+                        
+                        <Design topic="Copyrights Form"/>
                         <div className="relative">
 
                             <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>

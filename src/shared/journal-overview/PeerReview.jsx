@@ -5,8 +5,85 @@ import React, { useEffect, useRef, useState } from 'react'
 import Dash from '../Side/Dash';
 import { GrDocumentZip } from 'react-icons/gr';
 import HeroSection from '../Home/HeroSection';
-
+import Design from './Design'; import { ClipboardCheck, Clock, Users, CheckCircle, XCircle, MessagesSquare, Award, ArrowRight } from 'lucide-react';
 function Aboutus() {
+  const [activeStep, setActiveStep] = useState(0);
+  const decisions = [
+    {
+      icon: <CheckCircle className="w-6 h-6 text-green-500" />,
+      title: "Accept",
+      description: "Paper meets all criteria and can proceed to publication"
+    },
+    {
+      icon: <ArrowRight className="w-6 h-6 text-yellow-500" />,
+      title: "Minor Revision",
+      description: "Small changes needed before acceptance"
+    },
+    {
+      icon: <ArrowRight className="w-6 h-6 text-orange-500" />,
+      title: "Major Revision",
+      description: "Substantial changes required"
+    },
+    {
+      icon: <XCircle className="w-6 h-6 text-red-500" />,
+      title: "Reject",
+      description: "Paper does not meet journal standards"
+    }
+  ];
+  const reviewSteps = [
+    {
+      icon: <ClipboardCheck className="w-8 h-8" />,
+      title: "Initial Screening",
+      duration: "2-3 days",
+      description: "Manuscripts are checked for scope, formatting, and plagiarism. Basic requirements must be met before peer review.",
+      details: [
+        "Scope alignment check",
+        "Plagiarism detection",
+        "Format compliance",
+        "Language quality assessment",
+        "References verification"
+      ]
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Reviewer Assignment",
+      duration: "3-5 days",
+      description: "Expert reviewers are selected based on the paper's subject area and methodology.",
+      details: [
+        "Minimum of two reviewers per manuscript",
+        "Expertise matching",
+        "Conflict of interest check",
+        "Double-blind review process",
+        "Reviewer confirmation"
+      ]
+    },
+    {
+      icon: <MessagesSquare className="w-8 h-8" />,
+      title: "Review Process",
+      duration: "2-3 weeks",
+      description: "Detailed evaluation of the manuscript's scientific merit, methodology, and significance.",
+      details: [
+        "Technical soundness",
+        "Research methodology",
+        "Result interpretation",
+        "Literature coverage",
+        "Overall quality assessment"
+      ]
+    },
+    {
+      icon: <CheckCircle className="w-8 h-8" />,
+      title: "Editorial Decision",
+      duration: "5-7 days",
+      description: "Based on reviewer recommendations, editors make the final decision on the manuscript.",
+      details: [
+        "Review compilation",
+        "Decision formulation",
+        "Feedback preparation",
+        "Revision instructions",
+        "Timeline setting"
+      ]
+    }
+  ];
   const [isActive, setIsActive] = useState(true);
   return (
     <>
@@ -15,18 +92,13 @@ function Aboutus() {
       <section className="  mx-auto">
         <div className="relative overflow-hidden bg-white">
           <div className="absolute inset-0">
-            <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
+            <div className="absolute inset-y-0 right-0 w-1/2  "></div>
           </div>
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-14 py-7">
-            <div className="text-center mb-12">
-              <div className='flex justify-center gap-3 items-center'>
-                <div className='w-1 h-8 bg-[#1B356F]  '>
+            <div className="text-center mb-8">
 
-                </div>
-                <h2 className="text-3xl font-bold text-gray-800  ">Peer Review Process</h2>
-              </div>
-
+              <Design topic="Peer Review Process" />
               <div className="relative">
 
                 <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
@@ -34,304 +106,174 @@ function Aboutus() {
               </div>
 
             </div>
-            {/* <section className=" ">
-              <section className="  ">
-                <section className="">
-                  <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  md:py-5">
-                    <div className="lg:flex md:flex ">
-                      <div className="max-w-full w-full ">
-                        <div className="       ">
-                          <div className="max-w-full w-full leading-relaxed">
-                            <h3 className="font-semibold mb-2 ">
-                              <i>Requirements for publishing in</i> AJARCSE:
-                            </h3>
-                            <ul className="list-disc  list-outside pl-5  text-justify md:text-base text-sm">
-                              <li className="">
-                                The articles must be written by the correct AJARCSE
-                                <a
-                                  href="/documents/"
-                                  target="blank"
-                                  className="text-[#007BFF] underline inline-flex ml-1 gap-1 items-center"
-                                > {''} template < GrDocumentZip className="text-lg" /></a>
-                              </li>
-                              <li>
-                                Researchers should adhere to publication requirements that
-                                submitted work is original, is not plagiarized, and has not
-                                been published elsewhere.
-                              </li>
-                              <li>
-                                The abstract must be between 200 and 1000 characters long. We
-                                recommend that it be prepared in a structured way according to
-                                the PubMed's format.
-                              </li>
-                              <li>
-                                Three to eight keywords representing the main content of the
-                                article are required.
-                              </li>
-                              <li>
-                                Please ensure that the used reference style is Vancouver; if
-                                the references are not in the correct style, they may need to
-                                be retyped and carefully proofread. You can find it in the
-                                AJARCSE templates.
-                              </li>
-                              <li>
-                                The articles have to be written in formal English,
-                                'spell-checked', and 'grammar checked'.
-                              </li>
-                              <li>
-                                Only articles and abstracts that have been published or are in
-                                press or are available through public e-print/preprint
-                                servers, may be cited.
-                              </li>
-                              <li>
-                                All references mentioned in the Reference List are cited in
-                                the text, and vice versa.
-                              </li>
-                              <li>Figures and tables need to be of readable quality.</li>
-                              <li>
-                                Permission has been obtained for use of copyrighted material
-                                from other sources (including the Internet).
-                              </li>
-                              <li>
-                                The paper must be submitted through the
-                                <a
-                                  href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"
-                                  className="text-[#007BFF] underline whitespace-nowrap"
-                                >
-                                  {" "}
-                                  Open Journal System
-                                </a>
-                              </li>
-                            </ul>
-                            <h3 className="font-semibold mt-5 mb-2">
-                              <i>To submit a paper via OJS you will need:</i>{" "}
-                            </h3>
-                            <ul className=" list-outside pl-5  list-disc text-justify mb-5 md:text-base text-sm">
 
-                              <li>
-                                Your manuscript in the OpenOffice, Microsoft Word, or RTF
-                                document file format.
-                              </li>
+            <section className='grid md:grid-cols-2'>
 
-                              <li>
-                                The manuscript should be prepared according to the guidelines
-                                and requirements. For more information, please write to
-                                <a
-                                  href="mailto:editor@AJARCSE.com"
-                                  className="text-[#007BFF] underline  "
-                                >
-                                  {" "}
-                                  editor@ajarcse.com.
-                                </a>
-                              </li>
-                            </ul>
-                            <a
-                              href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
-                              className="text-[#007BFF] underline underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
-                            >
-                              Submit a paper via OJS
-                            </a>
-                            <h1 className="text-xl font-semibold mb-2 mt-5 ">Article types</h1>
+              <section className="   ">
+                <div className="max-w-screen-xl mx-auto px-5">
+                  <div className="   rounded-lg  ">
+                    {/* Header */}
+                    <h3 className="md:text-2xl text-lg font-bold text-gray-800 mb-6">
+                      Requirements for Publishing in <i>AJARCSE</i>
+                    </h3>
 
-                            <ul className="  list-outside pl-5  list-disc text-justify md:text-base text-sm">
+                    {/* Requirements List */}
+                    <ul className="list-disc pl-5 space-y-4 text-gray-700 md:text-base text-sm">
+                      <li>
+                        The articles must be written using the correct AJARCSE
+                        <a
+                          href="/documents/"
+                          target="_blank"
+                          className="text-blue-600 hover:underline ml-1 flex items-center gap-1"
+                        >
+                          template <GrDocumentZip className="text-lg" />
+                        </a>
+                      </li>
+                      <li>
+                        Researchers should adhere to publication requirements: originality, no plagiarism, and no prior publication.
+                      </li>
+                      <li>
+                        Abstracts must be 200-1000 characters and structured according to PubMed's format.
+                      </li>
+                      <li>Provide 3-8 keywords representing the main content of the article.</li>
+                      <li>
+                        Use Vancouver reference style. Incorrect styles may require retyping and proofreading.
+                      </li>
+                      <li>
+                        Articles must be written in formal English and thoroughly checked for spelling and grammar.
+                      </li>
+                      <li>Only cite published, in-press, or publicly available works.</li>
+                      <li>All references mentioned in the text must appear in the reference list and vice versa.</li>
+                      <li>Figures and tables should be of high, readable quality.</li>
+                      <li>
+                        Obtain permission for any copyrighted material used.
+                      </li>
+                      <li>
+                        Submit papers via the
+                        <a
+                          href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"
+                          className="text-blue-600 hover:underline ml-1"
+                        >
+                          Open Journal System
+                        </a>.
+                      </li>
+                    </ul>
 
-                              <li>
-                                Research article: Articles (4000-8000 words) that report
-                                original research and which present objective, questions,
-                                methods, results, discussions, and conclusions.
-                              </li>
-                              <li>
-                                Review article: In-depth review articles (4000-8000 words) on
-                                topics that build upon comprehensive references to the
-                                published literature. These articles are meant to offer
-                                relevant concepts, frameworks, theoretical proposals and
-                                limitations in the topic covered.
-                              </li>
-                              <li>
-                                Commentary: Commentary pieces and columns are short articles
-                                (typically up to 1000 words) that reflect the opinion of the
-                                author(s) on a topic of interest, written for a broad
-                                audience. These may be stand-alone pieces or part of a regular
-                                series.
-                              </li>
-                              <li>
-                                Editorial: These are written by the editor(s) or invited
-                                researchers (1000-2000 words) to discuss broader issues
-                                related to the articles published in the issue, the journal or
-                                certain topics relevant to the journal.
-                              </li>
-                              <li>
-                                Technical Article: Technical articles are original reports on
-                                specialist technical work, written for a professional
-                                audience. There are no minimum or maximum length constraints,
-                                but articles should be long enough to clearly explain the work
-                                carried out, while not of an excessive length that distorts
-                                rather than increases understanding.
-                              </li>
-                              <li>
-                                Short communications: Short articles (1000-2500 words)
-                                containing original research pieces. They should not be
-                                preliminary reports or contain purely incremental data and
-                                should be of significance and broad interest to the journal's
-                                research community.
-                              </li>
-                            </ul>
+                    {/* Submission Instructions */}
+                    <h3 className="md:text-xl text-lg font-bold text-gray-800 md:mt-10 mt-5 mb-4">
+                      To Submit a Paper via OJS, You Will Need:
+                    </h3>
+                    <ul className="list-disc pl-5 space-y-4 md:text-base text-sm text-gray-700">
+                      <li>Your manuscript in OpenOffice, Microsoft Word, or RTF format.</li>
+                      <li>
+                        Ensure the manuscript adheres to guidelines. For assistance, email
+                        <a
+                          href="mailto:editor@AJARCSE.com"
+                          className="text-blue-600 hover:underline ml-1"
+                        >
+                          editor@ajarcse.com
+                        </a>.
+                      </li>
+                    </ul>
+                    <a
+                      href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
+                      className="text-blue-600 hover:text-blue-800 underline mt-6 block"
+                    >
+                      Submit a Paper via OJS
+                    </a>
 
-                            <h1 className="text-xl font-semibold mt-5 mb-2 ">
-                              Benefits of AJARCSE
-                            </h1>
-                            <h3 className="font-semibold mb-2">Open Access</h3>
-                            <ul className=" list-outside pl-5  list-disc text-justify md:text-base text-sm">
-                              <li>
-                                All articles in the AJARCSE journal is an Open Access (OA).
-                              </li>
-                              <li>
-                                Authors can copy, redistribute, remix, transform, and build
-                                upon the material since all the papers are published under a
-                                Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-                                International (CC BY-NC-SA 4.0) license.
-                              </li>
-                              <li>
-                                Community standards, rather than copyright law, will continue
-                                to provide the mechanism for enforcement of proper attribution
-                                and responsible use of the published work.
-                              </li>
-                            </ul>
-                            <h3 className="font-semibold mt-5 mb-2">
-                              Rigorous review process
-                            </h3>
-                            <p className="text-justify md:text-base text-sm">
-                              Submitted papers are double-blind reviewed. The thoroughly
-                              transparent review process increases review quality by
-                              simultaneously evaluating the performance of reviewers and the
-                              impact and exploitation potential of the published article.
-                            </p>
-                          </div>
+                    {/* Article Types */}
+                    <h3 className="md:text-xl text-lg font-bold text-gray-800 md:mt-10 mt-5 mb-4">Article Types</h3>
+                    <ul className="list-disc pl-5 space-y-4 md:text-base text-sm text-gray-700">
+                      <li>
+                        <b>Research Article:</b> Detailed studies (4000-8000 words) presenting original research.
+                      </li>
+                      <li>
+                        <b>Review Article:</b> In-depth reviews (4000-8000 words) covering published literature.
+                      </li>
+                      <li>
+                        <b>Commentary:</b> Short pieces (up to 1000 words) reflecting opinions on a topic of interest.
+                      </li>
+                      <li>
+                        <b>Editorial:</b> Discussions (1000-2000 words) by editors or invited researchers.
+                      </li>
+                      <li>
+                        <b>Technical Article:</b> Specialist reports for professional audiences with flexible lengths.
+                      </li>
+                      <li>
+                        <b>Short Communications:</b> Concise research pieces (1000-2500 words).
+                      </li>
+                    </ul>
 
-                        </div>
-                      </div>
+                    {/* Benefits */}
+                    <h3 className="text-xl font-bold text-gray-800 mt-10 mb-4">Benefits of AJARCSE</h3>
+                    <h4 className="font-semibold text-gray-700 mb-3">Open Access</h4>
+                    <ul className="list-disc pl-5 space-y-4 text-gray-700">
+                      <li>All articles are Open Access (OA).</li>
+                      <li>
+                        Papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
+                      </li>
+                      <li>
+                        Community standards enforce proper attribution and responsible use of published work.
+                      </li>
+                    </ul>
+                    <h4 className="font-semibold text-gray-700 mt-6 mb-3">Rigorous Review Process</h4>
+                    <p className="text-gray-700">
+                      Submitted papers undergo a double-blind review process, ensuring quality and transparency.
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section className=''>
+                <div className="rounded-bl-3xl bg-blue-50  p-6 max-w-3xl mx-auto">
+                  <div className="flex items-start">
+                    <Award className="w-6 h-6 text-[#1B356F] mr-3 flex-shrink-0 mt-1" />
+                    <div>
+                      <h4 className="md:text-lg font-semibold text-gray-900 mb-2">Our Review Policy</h4>
+                      <ul className="space-y-2 text-gray-600 md:text-base text-sm">
+                        <li>• Double-blind peer review ensures unbiased evaluation</li>
+                        <li>• Each manuscript is reviewed by at least two expert reviewers</li>
+                        <li>• Reviewers are given 14 days to complete their review</li>
+                        <li>• Authors receive detailed feedback to improve their work</li>
+                        <li>• Fast-track review available for time-sensitive research</li>
+                      </ul>
                     </div>
                   </div>
-                </section>
-              </section>
-
-            </section> */}
-            <section className="bg-gray-50 py-10">
-              <div className="max-w-screen-xl mx-auto px-6 md:px-10">
-                <div className="bg-white shadow-lg rounded-lg p-6 md:p-10">
-                  {/* Header */}
-                  <h3 className="text-2xl font-bold text-gray-800 mb-6">
-                    Requirements for Publishing in <i>AJARCSE</i>
-                  </h3>
-
-                  {/* Requirements List */}
-                  <ul className="list-disc pl-5 space-y-4 text-gray-700">
-                    <li>
-                      The articles must be written using the correct AJARCSE
-                      <a
-                        href="/documents/"
-                        target="_blank"
-                        className="text-blue-600 hover:underline ml-1 flex items-center gap-1"
-                      >
-                        template <GrDocumentZip className="text-lg" />
-                      </a>
-                    </li>
-                    <li>
-                      Researchers should adhere to publication requirements: originality, no plagiarism, and no prior publication.
-                    </li>
-                    <li>
-                      Abstracts must be 200-1000 characters and structured according to PubMed's format.
-                    </li>
-                    <li>Provide 3-8 keywords representing the main content of the article.</li>
-                    <li>
-                      Use Vancouver reference style. Incorrect styles may require retyping and proofreading.
-                    </li>
-                    <li>
-                      Articles must be written in formal English and thoroughly checked for spelling and grammar.
-                    </li>
-                    <li>Only cite published, in-press, or publicly available works.</li>
-                    <li>All references mentioned in the text must appear in the reference list and vice versa.</li>
-                    <li>Figures and tables should be of high, readable quality.</li>
-                    <li>
-                      Obtain permission for any copyrighted material used.
-                    </li>
-                    <li>
-                      Submit papers via the
-                      <a
-                        href="https://AJARCSE.com/aritms/index.php/AJARCSE/about/submissions"
-                        className="text-blue-600 hover:underline ml-1"
-                      >
-                        Open Journal System
-                      </a>.
-                    </li>
-                  </ul>
-
-                  {/* Submission Instructions */}
-                  <h3 className="text-xl font-bold text-gray-800 mt-10 mb-4">
-                    To Submit a Paper via OJS, You Will Need:
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-4 text-gray-700">
-                    <li>Your manuscript in OpenOffice, Microsoft Word, or RTF format.</li>
-                    <li>
-                      Ensure the manuscript adheres to guidelines. For assistance, email
-                      <a
-                        href="mailto:editor@AJARCSE.com"
-                        className="text-blue-600 hover:underline ml-1"
-                      >
-                        editor@ajarcse.com
-                      </a>.
-                    </li>
-                  </ul>
-                  <a
-                    href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
-                    className="text-blue-600 hover:text-blue-800 underline mt-6 block"
-                  >
-                    Submit a Paper via OJS
-                  </a>
-
-                  {/* Article Types */}
-                  <h3 className="text-xl font-bold text-gray-800 mt-10 mb-4">Article Types</h3>
-                  <ul className="list-disc pl-5 space-y-4 text-gray-700">
-                    <li>
-                      <b>Research Article:</b> Detailed studies (4000-8000 words) presenting original research.
-                    </li>
-                    <li>
-                      <b>Review Article:</b> In-depth reviews (4000-8000 words) covering published literature.
-                    </li>
-                    <li>
-                      <b>Commentary:</b> Short pieces (up to 1000 words) reflecting opinions on a topic of interest.
-                    </li>
-                    <li>
-                      <b>Editorial:</b> Discussions (1000-2000 words) by editors or invited researchers.
-                    </li>
-                    <li>
-                      <b>Technical Article:</b> Specialist reports for professional audiences with flexible lengths.
-                    </li>
-                    <li>
-                      <b>Short Communications:</b> Concise research pieces (1000-2500 words).
-                    </li>
-                  </ul>
-
-                  {/* Benefits */}
-                  <h3 className="text-xl font-bold text-gray-800 mt-10 mb-4">Benefits of AJARCSE</h3>
-                  <h4 className="font-semibold text-gray-700 mb-3">Open Access</h4>
-                  <ul className="list-disc pl-5 space-y-4 text-gray-700">
-                    <li>All articles are Open Access (OA).</li>
-                    <li>
-                      Papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
-                    </li>
-                    <li>
-                      Community standards enforce proper attribution and responsible use of published work.
-                    </li>
-                  </ul>
-                  <h4 className="font-semibold text-gray-700 mt-6 mb-3">Rigorous Review Process</h4>
-                  <p className="text-gray-700">
-                    Submitted papers undergo a double-blind review process, ensuring quality and transparency.
-                  </p>
                 </div>
-              </div>
-            </section>
+                <div className="grid md:grid-cols-1 md:gap-4">
+                  {reviewSteps.map((step, index) => (
+                    <button
+                      key={index}
+                      className="p-4 rounded-lg text-center "
+                      onClick={() => setActiveStep(index)}
+                    >
+                      <div className="flex justify-center mb-2">
+                        {step.icon}
+                      </div>
+                      <h3 className="font-semibold mb-1">{step.title}</h3>
+                      <p className="text-sm opacity-75">{step.duration}</p>
+                    </button>
+                  ))}
+                </div>
 
+                <div className="bg-blue-50 rounded-bl-3xl  md:p-6 p-2 max-w-4xl mx-auto md:mb-12 mb-5">
+                  <h3 className="text-xl font-semibold md:mb-6 text-center">Possible Review Outcomes</h3>
+                  <div className="grid md:grid-cols-1 md:gap-4">
+                    {decisions.map((decision, index) => (
+                      <div key={index} className="text-center p-4">
+                        <div className="flex justify-center mb-2">
+                          {decision.icon}
+                        </div>
+                        <h4 className="font-semibold mb-1">{decision.title}</h4>
+                        <p className="text-sm text-gray-600">{decision.description}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+
+              </section>
+            </section>
           </div>
         </div>
 

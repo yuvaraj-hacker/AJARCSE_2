@@ -38,23 +38,7 @@ export default function Approuter() {
           <Route path="/issues" element={<IssuesPage />} />
           <Route path="/author-guidelines" element={<AuthorguidelinesPage />} />
           <Route path="/copyrights-form" element={<CopyrightsPage />} />
-          {/* <Route path="/aim-nd-scope" element={<AimscopePage />} />
-          <Route path="/aboutus" element={<AboutusPage />} />
-          <Route path="/author-guidelines" element={<AuthorguidelinesPage />} />
-          <Route path="/call-for-papers" element={<CallforpaperPage />} />
-          <Route path="/contactus" element={<ContactusPage />} />
-          <Route path="/copyrights-form" element={<CopyrightsPage />} />
-          <Route path="/editorial-board" element={<EditorialboardPage />} />
-          <Route path="/issues" element={<IssuesPage />} />
-          <Route path="/pay-fees" element={<PayfeesPage />} />
-          <Route path="/abstracting" element={<Abstracting />} />
-          <Route path="/articleProcess" element={<ArticleProcess />} />
-          <Route path="/journalreport" element={<JournalReport />} />
-          <Route path="/peerreview" element={<PeerReview />} />
-          <Route path="/publicationethic" element={<PublicationEthic />} />
-          <Route path="/aboutspecial" element={<AboutSpecial />} />
-          <Route path="/proposespecial" element={<ProposeSpecial />} />
-          <Route path="/publishspecial" element={<PublishSpecial />} /> */}
+          
 
         </Route>
       </Routes>

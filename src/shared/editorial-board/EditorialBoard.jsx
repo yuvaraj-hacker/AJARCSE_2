@@ -1,68 +1,127 @@
-import React, { useState } from 'react'
-import Dash from '../Side/Dash';
+
+import React, { useState } from 'react';
 import HeroSection from '../Home/HeroSection';
-function Aboutus() {
-  const [isActive, setIsActive] = useState(true);
+import Design from '../journal-overview/Design';
+import { Link } from 'react-router-dom';
+
+const Aboutus = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+
+  const categories = ['All', 'Editor-in-Chief', 'Associate Editors', 'Editorial Board', 'Advisory Board'];
+
+  const editors = [
+    {
+      name: "Prof. David Anderson",
+      role: "Editor-in-Chief",
+      affiliation: "Stanford University, USA",
+      expertise: "Artificial Intelligence & Machine Learning",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Computer Science",
+      category: "Editor-in-Chief"
+    },
+    {
+      name: "Prof. Sarah Chen",
+      role: "Associate Editor",
+      affiliation: "MIT, USA",
+      expertise: "Cybersecurity & Network Systems",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Computer Engineering",
+      category: "Associate Editors"
+    },
+    {
+      name: "Dr. Michael Roberts",
+      role: "Associate Editor",
+      affiliation: "University of Cambridge, UK",
+      expertise: "Cloud Computing & Distributed Systems",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Cloud Computing",
+      category: "Associate Editors"
+    },
+    {
+      name: "Prof. Elena Rodriguez",
+      role: "Editorial Board Member",
+      affiliation: "Technical University of Madrid, Spain",
+      expertise: "Software Engineering & System Design",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Software Engineering",
+      category: "Editorial Board"
+    },
+    {
+      name: "Dr. James Wilson",
+      role: "Editorial Board Member",
+      affiliation: "University of Tokyo, Japan",
+      expertise: "Data Science & Big Data Analytics",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Data Science",
+      category: "Editorial Board"
+    },
+    {
+      name: "Prof. Lisa Zhang",
+      role: "Advisory Board Member",
+      affiliation: "Tsinghua University, China",
+      expertise: "Computer Vision & Pattern Recognition",
+      image: "/api/placeholder/150/150",
+      qualification: "Ph.D. in Computer Vision",
+      category: "Advisory Board"
+    }
+  ];
+  const filteredEditors = activeFilter === 'All'
+    ? editors
+    : editors.filter(editor => editor.category === activeFilter);
 
   return (
     <>
-
       <HeroSection
         backgroundImage="/images/Herosection/ground.jpg"
         text=" The Editorial Board of AJARCSE comprises leading scholars and experts dedicated to advancing research
           in computer science and engineering. We ensure rigorous peer review, uphold academic integrity, and foster
           innovation across emerging technologies.  "  />
-      <section className="  mx-auto   ">
-        <section className=" ">
-          <section className=" ">
-            <section className="">
-              <div className="relative overflow-hidden bg-white">
-                <div className="absolute inset-0">
-                  <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
-                </div>
-                <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7 md:py-14">
-                  <div className="text-center mb-12">
-                    <div className='flex justify-center gap-3 items-center'>
-                      <div className='w-1 h-8 bg-[#1B356F]  '>
+      <section className="md:py-16 py-5 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
 
-                      </div>
-                      <h2 className="text-3xl font-bold text-gray-800  ">Editorial Board</h2>
-                    </div>
-                    <div className="relative">
+            <Design topic="Editorial Board" />
+            <p className="md:text-lg text-sm text-gray-600 max-w-3xl mx-auto">
+              Our distinguished editorial board comprises leading experts in computer science and engineering from prestigious institutions worldwide.
+            </p>
+          </div>
 
-                      <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
-                      <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
-                    </div>
-                    <div className="text-center  md:text-base text-sm  mt-10">
-                      Update Will Come Soon.......
-                    </div>
-                  </div>
-
-
-                </div>
+          {/* Category Filter */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {categories.map((category) => (
+              <div
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                className={`md:px-4 px-2 py-2 md:rounded-bl-3xl rounded-bl-xl cursor-pointer  text-sm font-medium  
+                ${activeFilter === category
+                    ? 'bg-[#1B356F] text-white'
+                    : 'bg-white     '}`}  >
+                {category}
               </div>
-              {/* <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  py-5">
-                <div className="lg:flex md:flex ">
-                  <div className="max-w-full w-full ">
-                    <div className="  p-2   bg-white">
-                      <p className="text-center md:text-2xl text-lg">Editorial Board</p>
+            ))}
+          </div>
 
-                      <div className='mx-auto mt-4 '>
-                        <img className='w-96 mx-auto rounded-3xl' src="/images/Herosection/editorial.jpeg" alt="" />
-                      </div>
-                      <div className="text-center h-40 mt-10">
-                        Update Will Come Soon.......
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            </section>
-          </section>
+          {/* Editorial Board Grid */}
+          <div className="text-center ">
+            <p className="">Update will come soon.......</p>
 
-        </section>
+          </div>
+
+          <div className="mt-12 bg-blue-50 rounded-bl-3xl p-6 max-w-3xl mx-auto">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">Join Our Editorial Board</h4>
+            <p className="text-gray-600 mb-4 md:text-base text-sm">
+              We welcome distinguished researchers and academics to join our editorial board. If you are interested in contributing to our journal, please contact us with your CV and areas of expertise.
+            </p>
+            <Link to='/contactus'>
+              <button className="  items-center px-4 py-2 borde  md:text-base text-sm font-medium rounded-bl-3xl  hover:text-white bg-[#1B356F] text-white ">
+                Apply to Join
+              </button>
+            </Link>
+          </div>
+        </div>
       </section>
     </>
-  )
-}
-export default Aboutus
+  );
+};
+
+export default Aboutus;
