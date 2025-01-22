@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel, FaLocationArrow, FaArrowRight } from "react-icons/fa";
+import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel, FaLocationArrow, FaArrowRight, FaCircle } from "react-icons/fa";
 import { FaCheckCircle, FaClock, FaCogs, FaTrophy, FaChartLine } from "react-icons/fa";
 import { FaFileAlt, FaCalendarAlt, FaSyncAlt, } from "react-icons/fa";
 import { SiEthereum } from 'react-icons/si';
@@ -181,8 +181,8 @@ const Home = () => {
               <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 col-span-2">
                 {topics.map((topic, index) => (
                   <div key={index} className="md:space-y-4 space-y-2">
-                    <div className="flex items-center gap-4 bg-white lg:p-5 border border-[#1B356F] xl:h-12 rounded-bl-3xl transition-colors group">
-                      <div className=" p-2 text-[#1B356F] rounded-lg text-xl     ">{topic.icon}</div>
+                    <div className="flex items-center md:gap-2 bg-white lg:p-5 border border-[#1B356F] xl:h-12 md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
+                      <div className=" p-2 text-[#1B356F] rounded-lg text-xl     "><FaCircle  size={7}/></div>
                       <p className="text-black md:text-sm text-sm  font-semibold">{topic.name}</p>
                     </div>
                   </div>
@@ -234,7 +234,7 @@ const Home = () => {
         />
         <hr className="flex-grow border-t border-[#F2F2F2]" />
       </div> */}
-    </div>
+    </div >
   );
 };
 
