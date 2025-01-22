@@ -114,7 +114,7 @@ const Home = () => {
   return (
     <div className="min-h-screen  ">
       {/* Hero Section */}
-      <section className="relative overflow-hidden    bg-[url('/images/Herosection/ground.jpg')]">
+      <section className="relative overflow-hidden md:rounded-bl-[7rem] rounded-bl-[4rem]   bg-[url('/images/Herosection/ground.jpg')]">
         <div className="max-w-[80rem] mx-auto px-5     md:py-16 py-7 ">
           <div className="grid lg:grid-cols-2  grid-cols-1 gap-12  items-center ">
             <div className="relative z-10   ">

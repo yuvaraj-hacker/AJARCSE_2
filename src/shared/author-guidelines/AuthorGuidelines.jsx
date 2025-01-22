@@ -25,11 +25,11 @@ function Aboutus() {
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8   py-7">
               <div className="text-center md:mb-12 mb-5">
                 <Design topic="Author Guidelines" />
-                <div className="relative">
+                {/* <div className="relative">
 
                   <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
                   <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
-                </div>
+                </div> */}
                 <div className="max-w-full w-full ">
 
                   <p className="py-5 mt-3 text-center md:text-base text-sm">

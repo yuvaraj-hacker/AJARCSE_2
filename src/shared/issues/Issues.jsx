@@ -30,11 +30,11 @@ function Aboutus() {
                             </div>
 
                             <p className="mt-20 text-center">Will be Updated Soon...</p>
-                            <div className="relative">
+                            {/* <div className="relative">
 
                                 <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
                                 <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
-                            </div>
+                            </div> */}
                             {/* <div className="max-w-full w-full ">
 
                                 <div className='grid  grid-flow-row grid-cols-2 mt-5 md:gap-8 gap-4 md:grid-cols-2 lg:grid-cols-3'>
