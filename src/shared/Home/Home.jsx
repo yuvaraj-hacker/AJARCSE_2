@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel } from "react-icons/fa";
+import { FaGlobe, FaClipboardCheck, FaBolt, FaUsers, FaSearch, FaRobot, FaLeaf, FaGavel, FaLocationArrow } from "react-icons/fa";
 import { FaCheckCircle, FaClock, FaCogs, FaTrophy, FaChartLine } from "react-icons/fa";
 import { FaFileAlt, FaCalendarAlt, FaSyncAlt, } from "react-icons/fa";
 import { SiEthereum } from 'react-icons/si';
@@ -170,11 +170,11 @@ const Home = () => {
       </section>
       <section className='2xl:h-[85vh] relative '>
         <section className="md:py-16 py-5 bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center 2xl:h-[330px] ">
-          <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[80rem] mx-auto  px-5  ">
             <div className='grid lg:grid-cols-3 grid-cols-1 '>
 
               <div className='flex justify-center gap-3 items-center lg:mb-96 mb-5'>
-                <div className='w-1 h-8 bg-white '> 
+                <div className='w-1 h-8 bg-white '>
                 </div>
                 <h2 className="md:text-3xl font-bold text-white  text-xl ">Research Topics covered</h2>
               </div>
@@ -210,11 +210,16 @@ const Home = () => {
               <div>
                 <h3 className="md:text-lg text-base font-semibold text-gray-800">Submission Guidelines</h3>
                 <p className="text-gray-600 md:text-base text-sm">Follow our manuscript preparation guidelines before submission.</p>
+                <Link to='/author-guidelines'>
+                  <div className='animate-pulse flex justify-end cursor-pointer '>
+                    <FaLocationArrow color="black" className='md:text-2xl text-xl' />
+                  </div>
+                </Link>
               </div>
-            </div>  
+            </div>
             <div></div>
           </div>
-          <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md hover:bg-[#1B356F] transition duration-300"  >
+            <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md hover:bg-[#1B356F] transition duration-300"  >
             🔗 Submit Your Paper Now
           </a>
         </div>
