@@ -130,7 +130,7 @@ const Home = () => {
                     Read More
                   </button>
                 </Link>
-                <button className="border border-[#1B356F] text-white bg-[#1B356F] md:px-6 px-4 md:py-3 py-2 lg:hidden  md:text-base text-sm block rounded-bl-3xl font-semibold hover:bg-blue-50 transition-colors">
+                <button className="border border-[#1B356F] text-[#1B356F] bg-white md:px-6 px-4 md:py-3 py-2 lg:hidden  md:text-base text-sm block rounded-bl-3xl font-semibold hover:bg-blue-50 transition-colors">
                   Submission Portal
                 </button>
               </div>

@@ -48,7 +48,6 @@ const Footer = () => {
         </div>
         <h1 className="bg-slate-300 h-[1px] w-full mt-5"></h1>
         <div className='grid lg:grid-cols-3 grid-cols-1  items-center mt-5'>
-
           <div>
           </div>
           <div className="text-center lg:mb-0 mb-5">

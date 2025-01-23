@@ -20,7 +20,7 @@ function Aboutus() {
                     </div>
                     <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-14 py-7">
                         
-                        <Design topic="Copyrights Form"/>
+                        <Design topic="Copyright Form"/>
                         <div className="relative">
 
                             <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
@@ -70,9 +70,9 @@ function Aboutus() {
                                                     <h1>Mobile:</h1>
                                                 </div>
                                                 <div className="text-center">
-                                                    <h1>1st Author Signature 2nd Author Signature</h1>
-                                                    <h1>Author Name: Author Name:</h1>
-                                                    <h1>Address Address</h1>
+                                                    <h1>1st Author's Signature </h1>
+                                                    <h1>Author's Name: </h1>
+                                                    <h1>Address </h1>
                                                 </div>
                                             </div>
 

@@ -5,7 +5,9 @@ import HeroSection from '../Home/HeroSection';
 import Design from './Design';
 
 const Aboutus = () => {
-  const [openSection, setOpenSection] = useState(null);
+  const [openSection, setOpenSection] = useState(0);
+
+
 
   const ethicsSections = [
     {

@@ -1,13 +1,13 @@
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import HeroSection from '../Home/HeroSection';
 import Design from '../journal-overview/Design';
 import { Link } from 'react-router-dom';
 
 const Aboutus = () => {
-  const [activeFilter, setActiveFilter] = useState('All');
+  // const [activeFilter, setActiveFilter] = useState('All');
 
-  const categories = ['All', 'Editor-in-Chief', 'Associate Editors', 'Editorial Board', 'Advisory Board'];
+  // const categories = ['All', 'Editor-in-Chief', 'Associate Editors', 'Editorial Board', 'Advisory Board'];
 
   const editors = [
     {
@@ -65,9 +65,44 @@ const Aboutus = () => {
       category: "Advisory Board"
     }
   ];
-  const filteredEditors = activeFilter === 'All'
-    ? editors
-    : editors.filter(editor => editor.category === activeFilter);
+  // const filteredEditors = activeFilter === 'All'
+  //   ? editors
+  //   : editors.filter(editor => editor.category === activeFilter);
+
+  const scrollContainer = useRef(null);
+  const [activeTab, setActiveTab] = useState(0);
+  const tabRefs = useRef([]);
+
+  const scrollLeft = () => {
+    if (scrollContainer.current) {
+      scrollContainer.current.scrollBy({
+        left: -200,
+        behaviour: "smooth",
+      });
+    }
+
+  }
+
+  const scrollRight = () => {
+    if (scrollContainer.current) {
+      scrollContainer.current.scrollBy({
+        left: 200,
+        behaviour: "smooth",
+      });
+    }
+  }
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+    tabRefs.current[index].scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center"
+    });
+
+  }
+
+
 
   return (
     <>
@@ -87,7 +122,7 @@ const Aboutus = () => {
           </div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          {/* <div className="flex flex-wrap justify-center gap-4 mb-12">
             {categories.map((category) => (
               <div
                 key={category}
@@ -99,7 +134,42 @@ const Aboutus = () => {
                 {category}
               </div>
             ))}
-          </div>
+          </div> */}
+
+          <section className='max-w-[60rem]   mx-auto px-5 my-5'>
+            <div className='relative items-center flex'>
+              <button className="p-2   text-black  z-10"
+                onClick={scrollLeft}
+              >
+                &#9664;
+              </button>
+              <div className='flex-1 overflow-hidden'>
+                <div ref={scrollContainer} className="flex space-x-4 whitespace-nowrap text-sm   scroll-smooth scrollbar-hide overflow-x-auto px-10" role="tablist" >
+                  {["All",
+                    "Editorial Board",
+                    "Editor in Chief",
+                    "All",
+                  ].map((editors, index) => (
+                    <button key={index}
+                      ref={(el) => (tabRefs.current[index] = el)}
+                      className={`${activeTab === index
+                        ? 'bg-[#1B356F] text-white  hover:text-white rounded-bl-2xl '
+                        : 'bg-white '} p-2   `}
+
+                      onClick={() => handleTabClick(index)}>
+                      {editors}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <button className="p-2   text-black  z-10"
+                onClick={scrollRight}
+              >
+                &#9654;
+              </button>
+            </div>
+          </section>
 
           {/* Editorial Board Grid */}
           <div className="text-center ">

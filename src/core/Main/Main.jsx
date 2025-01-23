@@ -9,7 +9,7 @@ export default function Main() {
         <>
             <div className="h-screen">
                 <Header />
-                <main className=" lg:mt-[90px] md:mt-[70px]  mt-[75px]     ">
+                <main className=" lg:mt-[55px] md:mt-[60px]  mt-[75px]     ">
                     <Outlet />
                 </main>
                 <Footer />
