@@ -14,7 +14,7 @@ const Footer = () => {
             <div className='flex flex-col justify-center md:items-start items-center md:text-left'>
               <div className='flex gap-3 items-center'>
                 <FaEnvelope />
-                <p>Email: <a href="mailto:editor@AJARCSE.com" className=" ">editor@ajarcse.com</a></p>
+                <p>Email: <a href="mailto:editor@AJARCSE.com" className=" ">editorajarcse@gmail.com</a></p>
               </div>
               <div className='flex gap-3 items-center'>
               <FaGlobe />
@@ -55,7 +55,7 @@ const Footer = () => {
             <p>© 2025 <span className='hover:underline' > <Link to="/" target='_blank'>AJARCSE</Link> </span> . All Rights Reserved.</p>
           </div>
           <div>
-            <img className='ml-auto w-24' src="/images/Herosection/white.png" alt="ojs" />
+            <img className='md:ml-auto md:mx-0 mx-auto w-24' src="/images/Herosection/white.png" alt="ojs" />
           </div>
         </div>
       </div>

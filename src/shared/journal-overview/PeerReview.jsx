@@ -177,9 +177,9 @@ function Aboutus() {
                     </ul>
                     <a
                       href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
-                      className="text-blue-600 hover:text-blue-800 underline mt-6 block"
+                      className="text-blue-600 hover:text-blue-800   mt-6 block"
                     >
-                      Submit a Paper via OJS
+                     🔗  Submit a Paper via OJS
                     </a>
 
                     {/* Article Types */}
@@ -230,12 +230,12 @@ function Aboutus() {
                     <Award className="w-6 h-6 text-[#1B356F] mr-3 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="md:text-lg font-semibold text-gray-900 mb-2">Our Review Policy</h4>
-                      <ul className="space-y-2 text-gray-600 md:text-base text-sm">
-                        <li>• Double-blind peer review ensures unbiased evaluation</li>
-                        <li>• Each manuscript is reviewed by at least two expert reviewers</li>
-                        <li>• Reviewers are given 14 days to complete their review</li>
-                        <li>• Authors receive detailed feedback to improve their work</li>
-                        <li>• Fast-track review available for time-sensitive research</li>
+                      <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc">
+                        <li>  Double-blind peer review ensures unbiased evaluation</li>
+                        <li>  Each manuscript is reviewed by at least two expert reviewers</li>
+                        <li>  Reviewers are given 14 days to complete their review</li>
+                        <li>  Authors receive detailed feedback to improve their work</li>
+                        <li>  Fast-track review available for time-sensitive research</li>
                       </ul>
                     </div>
                   </div>

@@ -113,7 +113,7 @@ const Aboutus = () => {
 
           <div className="mt-12 text-center">
             <p className="text-gray-600 max-w-3xl md:text-base text-sm mx-auto">
-              For detailed information about our publication ethics policies or to report ethical concerns, please contact our editorial office.
+              For detailed information about our publication ethics policies or to report ethical concerns, please contact our editorial office. <span className='text-blue-600 cursor-pointer'>editorajarcse@gmail.com</span>
             </p>
           </div>
         </div>

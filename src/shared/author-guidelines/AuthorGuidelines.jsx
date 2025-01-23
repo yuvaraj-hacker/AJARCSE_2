@@ -15,15 +15,12 @@ function Aboutus() {
   "  />
       <section className="   mx-auto max-w-[70rem]  ">
         <div className='grid grid-cols-1 items-start'>
-
-
           <div className="relative overflow-hidden bg-white">
             <div className="absolute inset-0">
               <div className="absolute inset-y-0 right-0 w-1/2 "></div>
             </div>
-
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8   py-7">
-              <div className="text-center md:mb-12 mb-5">
+            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-5   md:mt-10">
+              <div className="   ">
                 <Design topic="Author Guidelines" />
                 {/* <div className="relative">
 
@@ -31,8 +28,7 @@ function Aboutus() {
                   <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
                 </div> */}
                 <div className="max-w-full w-full ">
-
-                  <p className="py-5 mt-3 text-center md:text-base text-sm">
+                  <p className=" mb-4 mt-3 text-center md:text-base text-sm">
                     AJARCSE are peer-reviewed, community-driven research journals
                     covering the latest specialist topics at the emerging
                     intersections of IT and other fields. A general guide for how to
@@ -40,11 +36,7 @@ function Aboutus() {
                     EAI Endorsed Transactions. Submitted papers are reviewed by the
                     AJARCSE Editorial Board & Reviewers.
                   </p>
-
-
-
                 </div>
-
                 <section className=" ">
                   <section className=" ">
                     <section className="">
@@ -52,12 +44,8 @@ function Aboutus() {
                       <div className="max-w-screen-xl mx-auto w-full px-3 2xl:px-0  md:py-5">
                         <div className="lg:flex md:flex ">
                           <div className="max-w-full w-full ">
-                            <div className="      ">
-
-
+                            <div className="">
                               <div className="max-w-full w-full ">
-
-
                                 <h3 className="font-semibold mb-2">
                                   <i>Requirements for publishing in</i> AJARCSE:
                                 </h3>
@@ -144,9 +132,9 @@ function Aboutus() {
                                 </ul>
                                 <a
                                   href="https://AJARCSE.com/aritms/index.php/AJARCSE/submission/wizard"
-                                  className="text-[#007BFF] underline underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
+                                  className="text-[#007BFF]   underline-offset-1 hover:underline-offset-4 hover:text-blue-500 duration-200 pt-5"
                                 >
-                                  Submit a paper via OJS
+                                  🔗 Submit a paper via OJS
                                 </a>
                                 <h1 className="text-xl font-semibold mb-2  mt-5">Article types</h1>
 
@@ -237,15 +225,15 @@ function Aboutus() {
 
             </div>
           </div>
-          <div className='px-3'>
-            <div className="bg-blue-50 rounded-lg p-6 max-w-3xl mx-auto  my-10 ">
+          <div className='px-3 md:mb-10 mb-5 md:mt-0 mt-5'>
+            <div className="bg-blue-50 rounded-lg p-6 max-w-3xl mx-auto   ">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Important Notes</h4>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Authors are responsible for obtaining permission for copyrighted material</li>
-                <li>• All submissions are checked for plagiarism</li>
-                <li>• Multiple submissions of the same paper are not allowed</li>
-                <li>• Manuscripts must be in English (UK or US consistently)</li>
-                <li>• Submissions not following guidelines may be returned without review</li>
+              <ul className="space-y-2 text-gray-600 list-disc">
+                <li>   Authors are responsible for obtaining permission for copyrighted material</li>
+                <li>   All submissions are checked for plagiarism</li>
+                <li>   Multiple submissions of the same paper are not allowed</li>
+                <li>   Manuscripts must be in English (UK or US consistently)</li>
+                <li>   Submissions not following guidelines may be returned without review</li>
               </ul>
             </div>
           </div>

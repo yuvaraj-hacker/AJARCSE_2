@@ -23,7 +23,7 @@ function Aboutus() {
           </div>
 
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pt-14 py-7">
-            <div className="text-center md:mb-12">
+            <div className="  md:mb-12">
               <div className='flex justify-center gap-3 items-center'>
                 <div className='w-1 h-8 bg-[#1B356F]'>
                 </div>
@@ -33,8 +33,6 @@ function Aboutus() {
                 <div className="absolute -top-4 -right-4 w-72 h-72 bg-blue-100 rounded-full filter blur-3xl opacity-30"></div>
                 <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-purple-100 rounded-full filter blur-3xl opacity-30"></div>
               </div>
-
-
               <div className="max-w-[70rem] mx-auto px-4">
 
                 <div className="grid md:grid-cols-2 grid-cols-1 my-5 gap-10">
@@ -51,7 +49,7 @@ function Aboutus() {
                     <p className="text-gray-700 md:text-base text-sm">
                       The American Journal of Advanced Research in Computer Science &
                       Engineering (AJARCSE) aims to publish cutting-edge research that
-                      contributes to the advancement of computer science and engineering.
+                       contributes to the advancement of computer science and engineering.
                       The journal focuses on delivering groundbreaking research in areas
                       like AI, machine learning, blockchain, cybersecurity, and more.
                     </p>

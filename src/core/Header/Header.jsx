@@ -87,7 +87,7 @@ const Header = () => {
           <nav className={`lg:flex lg:space-x-4 space-y-4   ${menuOpen
             ? 'block  animate-slideIn h-[100vh] lg:animate-none'
             : 'hidden lg:block animate-slideOut lg:animate-none'
-            } flex-col lg:py-0 py-5 lg:flex-row bg-white lg:bg-transparent  lg:text-white lg:border-none border text-[#388883] absolute lg:static top-16 left-0 w-full rounded-b-3xl text-center lg:w-auto z-50`}
+            } flex-col lg:py-0 py-5 lg:flex-row bg-white lg:bg-transparent  lg:text-white lg:border-none border text-[#388883] absolute lg:static top-16 left-0 w-full rounded-b-3xl   lg:w-auto z-50`}
           >
             <div className="absolute inset-0 -z-10 lg:hidden block">
               <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-r from-blue-50 to-blue-100 opacity-50"></div>
@@ -193,10 +193,10 @@ const Header = () => {
             Submit New Manuscript
           </Link> */}
           </nav>
-          <div className="bg-[#1B356F] md:p-3 p-2 w-fit rounded-bl-3xl lg:block hidden text-white border-white border-2 md:text-sm text-xs cursor-pointer animate-glow">
+          <div className="bg-[#1B356F] md:p-3 p-2 w-fit rounded-bl-3xl lg:block hidden hover:bg-white hover:text-[#1B356F] duration-200 transform   hover:border-[#1B356F] text-white border-white border-2 md:text-sm text-xs cursor-pointer animate-glow">
             Submission Portal
           </div>
-        </div>
+        </div>    
       </header>
 
     </>

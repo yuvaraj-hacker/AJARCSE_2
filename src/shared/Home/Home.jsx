@@ -126,7 +126,7 @@ const Home = () => {
               </p>
               <div className="md:mt-8 mt-5 flex gap-4">
                 <Link to="/aboutus">
-                  <button className="bg-[#1B356F] text-white md:px-6 px-4 md:py-3 py-2 md:text-base text-sm rounded-bl-3xl hover:bg-blue-50 font-semibold hover:text-[#1B356F] transition-colors">
+                  <button className="bg-white text-[#1B356F]  md:px-6 px-4 md:py-3 py-2 md:text-base text-sm rounded-bl-3xl hover:bg-blue-50 font-semibold hover:text-[#1B356F] transition-colors">
                     Read More
                   </button>
                 </Link>
@@ -181,7 +181,7 @@ const Home = () => {
               <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 col-span-2">
                 {topics.map((topic, index) => (
                   <div key={index} className="md:space-y-4 space-y-2">
-                    <div className="flex items-center md:gap-2 bg-white lg:p-5 border border-[#1B356F] xl:h-12 md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
+                    <div className="flex items-center md:gap-2 bg-white lg:p-5 py-1 border border-[#1B356F] xl:h-12 md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
                       <div className=" p-2 text-[#1B356F] rounded-lg text-xl "><FaCircle size={7} /></div>
                       <p className="text-black md:text-sm text-sm  font-semibold">{topic.name}</p>
                     </div>
@@ -219,7 +219,7 @@ const Home = () => {
             </div>
             <div></div>
           </div>
-          <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md hover:bg-[#1B356F] transition duration-300"  >
+          <a href="#" className="md:mt-8 md:text-base text-sm inline-block bg-[#1B356F] hover:bg-white hover:text-[#1B356F]  text-white font-semibold py-3 px-6 rounded-bl-3xl shadow-md  transition duration-300"  >
             🔗 Submit Your Paper Now
           </a>
         </div>

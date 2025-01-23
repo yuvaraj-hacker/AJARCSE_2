@@ -122,7 +122,7 @@ const Aboutus = () => {
       <section className="md:py-16 py-5 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <Design topic="Article Processing Charges"/>
+            <Design topic="Article Processing Charges" />
             <p className="md:text-lg text-sm text-gray-600 max-w-3xl mx-auto">
               We believe in making research freely accessible to everyone. Our journal operates on a full open access model, ensuring your work reaches the widest possible audience.
             </p>
@@ -154,12 +154,12 @@ const Aboutus = () => {
               {/* <Info className="w-6 h-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" /> */}
               <div>
                 <h4 className="md:text-lg font-semibold text-gray-900 mb-2">Publication Policies</h4>
-                <ul className="space-y-2 text-gray-600 md:text-base text-sm">
-                  <li>• No mandatory charges for authors</li>
-                  <li>• build upon the material since all the papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.</li>
-                  <li>• Fee waivers available for researchers from low-income countries</li>
-                  <li>• Enhanced services are completely optional</li>
-                  <li>• Rigorous peer review process regardless of chosen package</li>
+                <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc">
+                  <li>  No mandatory charges for authors</li>
+                  <li>  build upon the material since all the papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.</li>
+                  <li>  Fee waivers available for researchers from low-income countries</li>
+                  <li>  Enhanced services are completely optional</li>
+                  <li>  Rigorous peer review process regardless of chosen package</li>
                 </ul>
               </div>
             </div>
