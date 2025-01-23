@@ -172,7 +172,6 @@ const Home = () => {
         <section className="md:py-16 py-5 bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center   ">
           <div className="max-w-[80rem] mx-auto  px-5  ">
             <div className='grid lg:grid-cols-3 grid-cols-1 '>
-
               <div className='flex justify-center gap-3 items-center lg:mb-96 mb-5'>
                 <div className='w-1 h-8 bg-white '>
                 </div>
