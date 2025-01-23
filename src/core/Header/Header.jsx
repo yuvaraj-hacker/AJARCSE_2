@@ -109,61 +109,61 @@ const Header = () => {
                 <div className=" lg:absolute lg:left-0 md:left-96 left-28  flex flex-col lg:grid grid-cols-2 lg:flex-none lg:text-[#1B356F]  shadow-sm     lg:bg-white  text-[#1B356F]  mt-2   lg:w-[500px] ">
                   <Link
                     to="/aboutus"
-                    className={`px-4 py-2   ${isActive("/aboutus") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]   " : ""}`}
+                    className={`px-2 py-2   ${isActive("/aboutus") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]   " : ""}`}
                   >
                     About
                   </Link>
                   <Link
                     to="/editorial-board"
-                    className={` px-4 py-2   ${isActive("/editorial-board") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={` px-2 py-2   ${isActive("/editorial-board") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Editorial Board
                   </Link>
                   <Link
                     to="/peerreview"
-                    className={`block px-4 py-2  ${isActive("/peerreview") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={`block px-2 py-2  ${isActive("/peerreview") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Peer Review Process
                   </Link>
                   <Link
                     to="/publicationethic"
-                    className={`block px-4 py-2  ${isActive("/publicationethic") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={`block px-2 py-2  ${isActive("/publicationethic") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Publication Ethics
                   </Link>
                   <Link
                     to="/abstracting"
-                    className={`block px-4 py-2  ${isActive("/abstracting") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={`block px-2 py-2  ${isActive("/abstracting") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Abstracting and Indexing
                   </Link>
                   <Link
                     to="/articleprocess"
-                    className={`block px-4 py-2  ${isActive("/articleprocess") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={`block px-2 py-2  ${isActive("/articleprocess") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Article Processing Charges
                   </Link>
                   <Link
                     to="/aim-nd-scope"
-                    className={` px-4 py-2    ${isActive("/aim-nd-scope") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={` px-2 py-2    ${isActive("/aim-nd-scope") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Aim and Scope
                   </Link>
                   <Link
                     to="/issues"
-                    className={` px-4 py-2    ${isActive("/issues") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={` px-2 py-2    ${isActive("/issues") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Issues
                   </Link>
                   <Link
                     to="/author-guidelines"
-                    className={` px-4 py-2     ${isActive("/author-guidelines") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={` px-2 py-2     ${isActive("/author-guidelines") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Author Guidelines
                   </Link>
                   <Link
                     to="/copyrights-form"
-                    className={` px-4 py-2     ${isActive("/copyrights-form") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                    className={` px-2 py-2     ${isActive("/copyrights-form") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Copyright Form
                   </Link>
