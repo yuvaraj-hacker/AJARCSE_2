@@ -155,15 +155,11 @@ const Header = () => {
                   >
                     Issues
                   </Link>
-                  <Link
-                    to="/author-guidelines"
-                    className={` px-2 py-2     ${isActive("/author-guidelines") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                  <Link to="/author-guidelines" className={` px-2 py-2     ${isActive("/author-guidelines") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Author Guidelines
                   </Link>
-                  <Link
-                    to="/copyrights-form"
-                    className={` px-2 py-2     ${isActive("/copyrights-form") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
+                  <Link to="/copyrights-form" className={` px-2 py-2     ${isActive("/copyrights-form") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]  " : ""}`}
                   >
                     Copyright Form
                   </Link>
