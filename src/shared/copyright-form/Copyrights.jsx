@@ -70,8 +70,8 @@ function Aboutus() {
                                                     <h1>Mobile:</h1>
                                                 </div>
                                                 <div className="text-center">
-                                                    <h1>1st Author's Signature </h1>
-                                                    <h1>Author's Name: </h1>
+                                                    <h1>Author's Signature </h1>
+                                                    <h1>Author Name(s): </h1>
                                                     <h1>Address </h1>
                                                 </div>
                                             </div>

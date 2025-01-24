@@ -9,6 +9,7 @@ import { IoHardwareChipOutline } from 'react-icons/io5';
 import { BiLockAlt } from 'react-icons/bi';
 import { MdLocationCity, MdOutlineTransform } from 'react-icons/md';
 import { RiSignalTowerLine } from 'react-icons/ri';
+import Design from '../journal-overview/Design';
 
 const Home = () => {
   const topics = [
@@ -146,14 +147,10 @@ const Home = () => {
       </section>
       <section className="bg-white md:py-12  py-5 ">
         <div className="max-w-[80rem] mx-auto px-5  text-center">
-          <div className='space-y-2 mb-5'>
-            <div className='flex justify-center gap-3 items-center'>
-              <div className='w-1 h-8 bg-[#1B356F]  '>
+          <div className='   '>
 
-              </div>
-              <h2 className="md:text-3xl font-bold text-gray-800  text-xl ">Why Choose Us?</h2>
-            </div>
-            <p className="text-gray-600 mb-10 md:text-lg text-sm">
+            <Design topic="Why Choose Us ?" />
+            <p className="text-gray-600  md:text-lg text-sm mb-5">
               Discover why researchers and professionals trust our journal for publishing their cutting-edge work.
             </p>
           </div>
@@ -169,18 +166,18 @@ const Home = () => {
         </div>
       </section>
       <section className='  relative '>
-        <section className="md:py-16 py-5 bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center   ">
+        <section className="lg:py-16 py-5 bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center   ">
           <div className="max-w-[80rem] mx-auto  px-5  ">
             <div className='grid lg:grid-cols-3 grid-cols-1 '>
-              <div className='flex justify-center gap-3 items-center lg:mb-96 mb-5'>
+              <div className='flex justify-center gap-5 items-center lg:mb-96 mb-5'>
                 <div className='w-1 h-8 bg-white '>
                 </div>
                 <h2 className="md:text-3xl font-bold text-white  text-xl ">Research Topics covered</h2>
               </div>
-              <div className="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-4 col-span-2">
+              <div className="grid md:grid-cols-3 grid-cols-1 items-stretch  md:gap-8 gap-4 col-span-2">
                 {topics.map((topic, index) => (
-                  <div key={index} className="md:space-y-4 space-y-2">
-                    <div className="flex items-center md:gap-2 bg-white lg:p-5 py-1 border border-[#1B356F] xl:h-12 md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
+                  <div key={index} className="  ">
+                    <div className="flex items-center md:gap-2 bg-white   border border-[#1B356F]  p-2  xl:h-12 h-full md:rounded-bl-3xl rounded-bl-xl  transition-colors group">
                       <div className=" p-2 text-[#1B356F] rounded-lg text-xl "><FaCircle size={7} /></div>
                       <p className="text-black md:text-sm text-sm  font-semibold">{topic.name}</p>
                     </div>

@@ -149,12 +149,12 @@ const Aboutus = () => {
 
 
           {/* Additional Information */}
-          <div className="md:mt-12 bg-blue-50 rounded-bl-3xl p-6 max-w-3xl mx-auto">
+          <div className="md:mt-12 bg-blue-50 rounded-bl-3xl    max-w-3xl mx-auto">
             <div className="flex items-start">
               {/* <Info className="w-6 h-6 text-blue-500 mr-3 flex-shrink-0 mt-0.5" /> */}
-              <div>
+              <div className='p-5'>
                 <h4 className="md:text-lg font-semibold text-gray-900 mb-2">Publication Policies</h4>
-                <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc">
+                <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc pl-4">
                   <li>  No mandatory charges for authors</li>
                   <li>  build upon the material since all the papers are published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.</li>
                   <li>  Fee waivers available for researchers from low-income countries</li>

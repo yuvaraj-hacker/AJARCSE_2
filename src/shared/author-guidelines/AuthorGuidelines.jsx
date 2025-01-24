@@ -139,7 +139,6 @@ function Aboutus() {
                                 <h1 className="text-xl font-semibold mb-2  mt-5">Article types</h1>
 
                                 <ul className="  list-outside pl-5 list-disc text-justify md:text-base text-sm">
-
                                   <li>
                                     Research article: Articles (4000-8000 words) that report
                                     original research and which present objective, questions,
@@ -225,10 +224,10 @@ function Aboutus() {
 
             </div>
           </div>
-          <div className='px-3 md:mb-10 mb-5 md:mt-0 mt-5'>
-            <div className="bg-blue-50 rounded-lg p-6 max-w-3xl mx-auto   ">
-              <h4 className="text-lg font-semibold text-gray-900 mb-4">Important Notes</h4>
-              <ul className="space-y-2 text-gray-600 list-disc">
+          <div className='  md:mb-10 mb-5 md:mt-0 mt-5 px-3'>
+            <div className="bg-blue-50 rounded-lg  p-5 max-w-3xl mx-auto  space-y-3 ">
+              <h4 className="text-lg font-semibold text-gray-900  ">Important Notes</h4>
+              <ul className="space-y-2 text-gray-600 list-disc pl-4">
                 <li>   Authors are responsible for obtaining permission for copyrighted material</li>
                 <li>   All submissions are checked for plagiarism</li>
                 <li>   Multiple submissions of the same paper are not allowed</li>

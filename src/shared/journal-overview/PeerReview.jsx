@@ -113,7 +113,7 @@ function Aboutus() {
                 <div className="max-w-screen-xl mx-auto px-5">
                   <div className="   rounded-lg  ">
                     {/* Header */}
-                    <h3 className="md:text-2xl text-lg font-bold text-gray-800 mb-6">
+                    <h3 className="md:text-2xl text-lg font-bold text-gray-800 mb-4">
                       Requirements for Publishing in <i>AJARCSE</i>
                     </h3>
 
@@ -225,12 +225,12 @@ function Aboutus() {
                 </div>
               </section>
               <section className=''>
-                <div className="rounded-bl-3xl bg-blue-50  p-6 max-w-3xl mx-auto">
+                <div className="rounded-bl-3xl bg-blue-50  p-5 max-w-3xl mx-auto md:mt-0 mt-5">
                   <div className="flex items-start">
                     <Award className="w-6 h-6 text-[#1B356F] mr-3 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="md:text-lg font-semibold text-gray-900 mb-2">Our Review Policy</h4>
-                      <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc">
+                      <ul className="space-y-2 text-gray-600 md:text-base text-sm list-disc pl-4">
                         <li>  Double-blind peer review ensures unbiased evaluation</li>
                         <li>  Each manuscript is reviewed by at least two expert reviewers</li>
                         <li>  Reviewers are given 14 days to complete their review</li>
@@ -256,15 +256,15 @@ function Aboutus() {
                   ))}
                 </div>
 
-                <div className="bg-blue-50 rounded-bl-3xl  md:p-6 p-2 max-w-4xl mx-auto md:mb-12 mb-5">
-                  <h3 className="text-xl font-semibold md:mb-6 text-center">Possible Review Outcomes</h3>
-                  <div className="grid md:grid-cols-1 md:gap-4">
+                <div className="bg-blue-50 rounded-bl-3xl  md:p-6 p-2 max-w-4xl mx-auto md:mb-0 mb-5">
+                  <h3 className="text-xl font-semibold md:mb-3 mb-3 text-center">Possible Review Outcomes</h3>
+                  <div className="grid md:grid-cols-1 md:gap-4 gap-5 ">
                     {decisions.map((decision, index) => (
-                      <div key={index} className="text-center p-4">
+                      <div key={index} className="text-center ">
                         <div className="flex justify-center mb-2">
                           {decision.icon}
                         </div>
-                        <h4 className="font-semibold mb-1">{decision.title}</h4>
+                          <h4 className="font-semibold mb-1">{decision.title}</h4>
                         <p className="text-sm text-gray-600">{decision.description}</p>
                       </div>
                     ))}

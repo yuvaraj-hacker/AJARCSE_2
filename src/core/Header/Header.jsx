@@ -106,10 +106,10 @@ const Header = () => {
 
               </button>
               {isDropdownOpen && (
-                <div className=" lg:absolute lg:left-0 md:left-96 left-28  flex flex-col lg:grid grid-cols-2 lg:flex-none lg:text-[#1B356F]  shadow-sm     lg:bg-white  text-[#1B356F]  mt-2   lg:w-[500px] ">
+                <div className=" lg:absolute lg:left-0 md:left-96 left-28  flex flex-col lg:grid grid-cols-2 lg:flex-none lg:text-[#1B356F]  shadow-sm  p-2 lg:bg-white  text-[#1B356F]  mt-2   lg:w-[500px] ">
                   <Link
                     to="/aboutus"
-                    className={`px-2 py-2   ${isActive("/aboutus") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F]   " : ""}`}
+                    className={`px-2 py-2   ${isActive("/aboutus") ? "underline underline-offset-4  decoration-4 lg:text-[#1B356F] " : ""}`}
                   >
                     About
                   </Link>
