@@ -108,7 +108,6 @@ function Aboutus() {
             </div>
 
             <section className='grid md:grid-cols-2'>
-
               <section className="   ">
                 <div className="max-w-screen-xl mx-auto px-5">
                   <div className="   rounded-lg  ">

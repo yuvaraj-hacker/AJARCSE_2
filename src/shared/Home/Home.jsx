@@ -156,7 +156,7 @@ const Home = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 md:gap-8 gap-4">
             {benefits.map((benefit, index) => (
-              <div key={index} className="md:p-4 p-2 bg-gray-100   rounded-bl-3xl transform hover:scale-105 transition-transform duration-300" >
+              <div key={index} className="md:p-4 p-2 bg-gray-100   rounded-bl-3xl  " >
                 <div className="flex justify-center   md:mb-4">{benefit.icon}</div>
                 <h3 className="md:text-xl text-lg font-semibold text-gray-800 md:mb-3 mb-2">{benefit.title}</h3>
                 <p className="text-gray-600 md:text-base text-sm">{benefit.description}</p>
@@ -166,7 +166,7 @@ const Home = () => {
         </div>
       </section>
       <section className='  relative '>
-        <section className="lg:py-16 py-5 bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center   ">
+        <section className=" lg:py-16  py-10  bg-[url('/images/Herosection/ground.jpg')] bg-no-repeat bg-cover bg-center   ">
           <div className="max-w-[80rem] mx-auto  px-5  ">
             <div className='grid lg:grid-cols-3 grid-cols-1 '>
               <div className='flex justify-center gap-5 items-center lg:mb-96 mb-5'>
